@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css2?family=Joan&display=swap);
+* {
+  box-sizing: border-box;
+}
+#grad1{
+  background-image: linear-gradient(to bottom right,#b5f1f1, #9b59b6);
+}
+body {
+  background-color: #9b59b6;
+  font-family: "Joan";
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  max-width: 430px;
+  width: 50%;
+  overflow: hidden;
+ border-radius: 10px;
+
+}
+
+.container .forms{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 180%;
+  height: 440px;
+  transition: height 0.2s ease;
+  
+}
+
+.container.active .forms{
+    height: 600px;
+  
+   
+}
+.container.active .container-Sign-in{
+    margin-left: -50%;
+    opacity: 0;
+    transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+
+.container .container-signup{
+opacity: 0;
+transition: opacity 0.09s ease;
+}
+
+.container.active .container-signup{
+    opacity: 1;
+    transition: opacity 0.02s ease;
+    border-radius: 10px;
+}
+
+.container .container-signup {
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+
+
+}
+.container .container-Sign-in{
+    width: 50%;
+    transition: margin-left 0.18s ease;
+}
+.container-Sign-in {
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+}
+
+.forms .header {
+ position: relative;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+  font-size: 20px;
+}
+.header-Sign-in {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.header-Sign-in h2 {
+  margin: 0;
+}
+.header h2 {
+  margin: 0;
+  
+}
+
+.forms .form {
+  padding: 30px 40px;
+}
+
+.formIn {
+  padding: 30px 40px;
+}
+.form-control {
+  padding-bottom: 20px;
+  position: relative;
+}
+.form-controle-Sign-in {
+  margin-bottom: 10px;
+  position: relative;
+}
+.form-controle-Sign-in label {
+  display: inline-block;
+  margin-bottom: 5px;
+
+}
+.form-control label {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+input::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.form-controle-Sign-in input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.formIn .checkBox-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+.checkBox-text .checkBox-Content {
+  display: flex;
+  align-items: center;
+}
+
+.checkBox-Content #logCheck {
+  accent-color: rgb(92, 127, 202);
+  margin: 0 8px 2-px 4px;
+}
+.formIn a {
+  text-decoration: none;
+  color: rgb(45, 22, 145);
+}
+.formIn a:hover {
+  text-decoration: underline;
+}
+.formIn .text-signup-text {
+  text-decoration: none;
+  color: rgb(69, 22, 145);
+}
+
+.text-signin-text {
+  text-decoration: none;
+  color: rgb(69, 22, 145);
+}
+.text-signin-text:hover{
+  text-decoration: underline;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+    transition: 0.5s ease
+}
+.form button:hover{
+  background-color: #5A44AD;
+  border: 2px solid #5A44AD;
+   
+}
+.formIn .but {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s ease
+}
+.but:hover{
+  background-color: #5A44AD;
+  border: 2px solid #5A44AD;
+}
+.formIn .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+.form .login-signin{
+    margin-top: 20px;
+  text-align: center;
+}
+
+.form-control.success input {
+  border-color: #63ad44;
+}
+.form-control.error input {
+  border-color: #ad5944;
+}
+
+.form-control.success small {
+  visibility: visible;
+  color: #63ad44;
+}
+.form-control.error small {
+  visibility: visible;
+  color: #723627;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  padding-top: 100px; /* Location of the box */
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
