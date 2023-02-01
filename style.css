@@ -18,10 +18,10 @@ body {
 
 .container {
   position: relative;
-  max-width: 430px;
+  max-width: 26.875rem;
   width: 50%;
   overflow: hidden;
- border-radius: 10px;
+  border-radius: 0.625rem;
 
 }
 
@@ -30,13 +30,13 @@ body {
   display: flex;
   align-items: center;
   width: 180%;
-  height: 440px;
+  height: 27.5rem;
   transition: height 0.2s ease;
   
 }
 
 .container.active .forms{
-    height: 600px;
+    height: 37.5rem;
   
    
 }
@@ -54,16 +54,16 @@ transition: opacity 0.09s ease;
 .container.active .container-signup{
     opacity: 1;
     transition: opacity 0.02s ease;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .container .container-signup {
   position: relative;
   background-color: #fefefe;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 0.625rem;
+  box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  width: 400px;
+  width: 25rem;
 
 
 }
@@ -77,21 +77,22 @@ transition: opacity 0.09s ease;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  width: 400px;
+  width: 25rem;
+
 }
 
 .forms .header {
  position: relative;
   background-color: #f7f7f7;
   border-bottom: 1px solid #f0f0f0;
-  padding: 20px 40px;
-  font-size: 20px;
+  padding: 1.25rem 2.5rem;
+  font-size: 1.25rem;
 }
 .header-Sign-in {
   background-color: #f7f7f7;
   border-bottom: 1px solid #f0f0f0;
-  padding: 10px 30px;
-  font-size: 20px;
+  padding: 1.25rem 1.875rem;
+  font-size: 1.25rem;
 }
 
 .header-Sign-in h2 {
@@ -103,32 +104,32 @@ transition: opacity 0.09s ease;
 }
 
 .forms .form {
-  padding: 30px 40px;
+  padding: 1.875rem 2.5rem;
 }
 
 .formIn {
-  padding: 30px 40px;
+  padding: 1.875rem 2.5rem;
 }
 .form-control {
-  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
   position: relative;
 }
 .form-controle-Sign-in {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   position: relative;
 }
 .form-controle-Sign-in label {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom:0.625rem;
 
 }
 .form-control label {
   display: inline-block;
-  margin-bottom: 2px;
+  margin-bottom: 0.125rem;
 }
 input::placeholder {
   font-family: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .form-control input {
@@ -136,8 +137,8 @@ input::placeholder {
   border-radius: 4px;
   display: block;
   font-family: inherit;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 0.875rem;
+  padding: 0.625rem;
   width: 100%;
   margin-bottom: 0;
 }
@@ -146,8 +147,8 @@ input::placeholder {
   border-radius: 4px;
   display: block;
   font-family: inherit;
-  font-size: 14px;
-  padding: 10px;
+  font-size: 0.875rem;
+  padding: 0.625rem;
   width: 100%;
 }
 
@@ -163,7 +164,7 @@ input::placeholder {
 
 .checkBox-Content #logCheck {
   accent-color: rgb(92, 127, 202);
-  margin: 0 8px 2-px 4px;
+  margin: 0 8px 2px 4px;
 }
 .formIn a {
   text-decoration: none;
@@ -200,9 +201,9 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     font-family: inherit;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: auto;
-    padding: 10px;
+    padding: 0.625rem;
     width: 80%;
     cursor: pointer;
     transition: 0.5s ease
@@ -221,12 +222,12 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     font-family: inherit;
-    font-size: 20px;
+    font-size:  1.25rem;
     margin: auto;
-    padding: 10px;
+    padding: 0.625rem;
     width: 80%;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     transition: 0.5s ease
 }
 .but:hover{
@@ -234,11 +235,11 @@ input::placeholder {
   border: 2px solid #5A44AD;
 }
 .formIn .login-signup {
-    margin-top: 30px;
+    margin-top: 1.875rem;
     text-align: center;
 }
 .form .login-signin{
-    margin-top: 20px;
+    margin-top: 1.25rem;
   text-align: center;
 }
 
@@ -260,8 +261,8 @@ input::placeholder {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  padding-top: 100px; /* Location of the box */
-  border-radius: 10px;
+  padding-top: 6.25rem; /* Location of the box */
+  border-radius: 0.625rem;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -273,16 +274,16 @@ input::placeholder {
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid #888;
   width: 50%;
-  border-radius: 10px;
+  border-radius:  0.625rem;
 }
 
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 
@@ -296,5 +297,5 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
+  font-size: 1.75rem;
 }
